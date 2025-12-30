@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+.icon {
+    display: none;
+}
+
 .mobile-menu {
     display: none;
 }
@@ -36,6 +40,7 @@ input {
     width: 400px;
     margin-left: 30px;
     padding: 3px;
+    border: none;
 
 }
 
@@ -255,38 +260,230 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
-    .nav-menu {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
         display: none;
     }
 
     .search-section {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100vw;
         gap: 1px;
     }
 
     logo {
         height: 40px;
+        display: inline;
+        margin: 0 1rem 0 1rem;
     }
 
     .page-title {
         font-size: 12px;
         color: #01310b;
+        margin: 0 1rem 0 1rem;
+
     }
 
     input {
-        width: 200px;
-        margin-left: 10px;
+        width: 160px;
+        margin: 0 0.5rem 0 0.5rem;
         padding: 2px;
+        border: none;
     }
-    .basket{
+
+    .basket {
         width: 12px;
         height: auto;
+        margin: 0 0.5rem 0 1rem;
         display: block;
     }
 
-    .mobile-menu-icon{
-        display: block;
+    .icon {
+        display: inline-block;
+        height: 14px;
+        width: auto;
     }
+
+    .hero {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .banner-hero {
+        margin-top: 5px;
+        width: 100vw;
+        height: 400px;
+        background-image: url(./assets/Banner\ elegante\ natal.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-title {
+        margin: 12px 10px 0 30px;
+        font-size: 24px;
+        color: #FFF;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+    }
+
+    .banner-btn {
+        background-color: rgb(19, 162, 19);
+        height: 25px;
+        width: 130px;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        margin: 10px 10px;
+        cursor: pointer;
+    }
+
+    .quick-lincks {
+        display: none;
+    }
+
+    .ProductShowcase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+
+    }
+
+    .emphasis-Product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Christmas-Product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 14px;
+        color: #ffffff;
+        margin: 5px;
+    }
+
+
+    .products img {
+        width: 250px;
+        height: 180px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .products {
+        width: 290px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    h4 {
+        margin: 6px 0 3px 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #010b01;
+        font-weight: 200;
+        font-size: 16px;
+    }
+
+    .products-price {
+        margin-right: auto;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .products-btn {
+    height: 20px;
+    width: 100px;
+    margin-bottom: 8px;
+    margin-left: 140px;
+    border-radius: 8px;
+    background-color: rgb(19, 162, 19);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+}
+.differential {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.differential img {
+    color: #ffffff;
+    display: flex;
+    height: 40px;
+    background-color: #FFF;
+    border-radius: 15px;
+    margin: 5px auto;
+}
+
+.differential h4 {
+    color: #ffffff;
+    font-size: 16px;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    background-color: #ffffff;
+
+}
+
+.contacts a {
+    font-size: 8px;
+    text-decoration: none;
+    color: #3d3b3b;
+    margin-bottom: 15px;
+}
+
+.social-networks {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-networks img {
+    width: 30px;
+}
+
+.developer {
+    font-size: 10px;
+    margin-top: 10px;
+    color: #3d3b3b;
+}
 
 }
