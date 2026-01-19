@@ -14,13 +14,15 @@
     <div class="container">
         <header>
             <section class="search-section">
+                <a id="filter" href="./productFilter.html"></a>
                 <img class="logo"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2dATwGQ6UMyvJleHeaIzwmmqNpSQhQBtn8w&s"
                     alt="logo">
                 <h3 class="page-title">CESTAS DE PRESENTES</h3>
-                <input placeholder="O que você procura ?" type="text">
+                <input id="search" placeholder="O que você procura ?" type="text">
+                <button id="search-btn" class="search-icon"><img  src="/assets/search.svg" alt=""></button>
                 <img class="basket" src="./assets/basket.svg" alt="cesta-img">
-                <button><img class="icon" src="./assets/menu_white_36dp.svg" alt=""></button>
+                <button><img class="icon" src="./assets/menu_white_36dp.svg" alt="icone-"></button>
             </section>
             <nav>
                 <div class="nav-menu">
@@ -64,7 +66,7 @@
                 <div class="emphasis-Product">
                     <div class="products">
                         <img src="./assets/stich.jpeg" alt="stich">
-                        <h4>Cesta Personalizada Stich</h4>
+                        <h4 class="name">Cesta Personalizada Stich</h4>
                         <p class="products-price">R$ <span>120</span></p>
                         <button class="products-btn">Comprar</button>
                     </div>
@@ -83,7 +85,7 @@
                     <div class="products">
                         <img src="./assets/espada.jpeg" alt="espada">
                         <h4>Cesta Personalizada Gamer</h4>
-                        <p class="products-price">R$<span>120</span></p>
+                        <p class="products-price">R$<span>150</span></p>
                         <button class="products-btn">Comprar</button>
                     </div>
                 </div>
@@ -104,7 +106,7 @@
                     <div class="products">
                         <img src="./assets/lontra.jpeg" alt="lontra">
                         <h4>Cesta Natalina Lontra</h4>
-                        <p class="products-price">R$<span>150</span></p>
+                        <p class="products-price">R$<span>180</span></p>
                         <button class="products-btn">Comprar</button>
                     </div>
                     <div class="products">
@@ -115,6 +117,7 @@
                     </div>
                 </div>
             </div>
+            <div id="product-container"></div>
             <div class="differential-session">
                 <div class="differential">
                     <img src="./assets/icons8-relógio.svg" alt="relogio">
@@ -146,7 +149,7 @@
             </footer>
 
             <article>
-                <main class="modal-overview">
+                <main class="modal-overview" id="overview">
                     <section class="modal-backgroud"> </section>
 
                     <div class="modal-product">
@@ -155,7 +158,8 @@
                             <div id="modal-purchase-value">
                                 <h2 class="modal-title">Cesta Urso do Natal</h2>
                                 <p class="modal-price">R$ 0,00</p>
-                                <p class="moadal-installment">Em até 6x sem juros de <span class="subdivision">R$</span></p>
+                                <p class="moadal-installment">Em até 6x sem juros de <span class="subdivision">R$</span>
+                                </p>
                                 <button id="modal-btn">Adicionar ao carrinho</button>
                             </div>
                         </div>
@@ -178,4 +182,6 @@
     </div>
 </body>
 
+<script src="./script.js" type="module"></script>
+<script src="./modal.js"></script>
 </html>
