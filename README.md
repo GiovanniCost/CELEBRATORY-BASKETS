@@ -15,4 +15,4 @@
   <li>Lógica de filtragem por categoria (ex: "Aniversário", "Romântica")</li>
   <li>Navegação otimizada para desktops, tablets e smartphones.</li>
 </ul>
-<img src="">
+<img src="https://github.com/GiovanniCost/CELEBRATORY-BASKETS/blob/master/home_cestasPresentes.png?raw=true">
