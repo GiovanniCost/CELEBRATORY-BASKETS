@@ -237,43 +237,45 @@ h4 {
 }
 
 footer {
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #fdf9f9;
 }
 
 .contacts {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    background-color: #ffffff;
-    gap: 60px;
+    gap: 1.5rem;
 }
 
 .contacts a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #3d3b3b;
-    margin-bottom: 30px;
+ text-decoration: none;
+ color: #f0f8ff;
 }
 
 .social-networks {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-    justify-content: center;
+display: flex;
+gap: 2rem;
+align-items: center;
+justify-content: center;
 }
 
 .social-networks img {
     width: 60px;
+    margin-top: 0.5rem;
+    
 }
 
 .developer {
-    font-size: 15px;
-    margin-top: 10px;
-    color: #3d3b3b;
+    background-color: #f0e9e9;
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+
+  
 }
 
 @media screen and (max-width: 770px) {

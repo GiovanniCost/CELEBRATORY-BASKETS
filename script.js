@@ -1,14 +1,19 @@
-import products from './product.js';  // ✅ Correto
 let search = document.getElementById('search')
 let searchBtn = document.getElementById('search-btn')
-let searchFilter = document.getElementById('filter')
+const productContainer = document.getElementById('product-container');
 
-function searchValue(){
-const inputValue = search.value
-window.location = "productFilter.html" 
 
-console.log(inputValue)
+function pageOpen() {
+
+window.location.href = "productFilter.html";
+
+
+
 }
 
-   searchBtn.addEventListener('click', searchValue)
-  
+document.addEventListener('DOMContentLoaded', function() {
+  searchBtn = document.getElementById('search-btn')
+  if(searchBtn) {
+    searchBtn.addEventListener('click', pageOpen)
+  }
+})

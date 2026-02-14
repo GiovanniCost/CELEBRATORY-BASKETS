@@ -10,3 +10,22 @@ const products = [
 ];
 
 export default products
+
+
+/*export function filterBasket(){
+  const listOfBaskets = products.filter((product) =>{
+    if(product.type.toLowerCase() === search.value.toLowerCase()){
+      const listOfBaskets = document.createElement('div');
+      listOfBaskets.innerHTML = `
+      <img width="50" src="${product.img}"/>
+      <h4>${product.name}</h4>
+      <p><span>${formatCurrecy(product.price)}</span></p>
+      `;
+      productContainer.appendChild(listOfBaskets);
+      console.log(listOfBaskets)
+      
+    } else{
+      console.log("Digite um valor Valido")
+    }
+  })
+}*/
