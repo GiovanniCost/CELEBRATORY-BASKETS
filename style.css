@@ -36,10 +36,10 @@
     color: #01310b;
 }
 
-#search-btn{
-    background-color:white;
+#search-btn {
+    background-color: white;
     border: none;
-     cursor: pointer
+    cursor: pointer;
 }
 
 #search-btn:hover {
@@ -85,12 +85,13 @@ nav {
     align-items: center;
     flex-direction: column;
     background-color: rgba(30, 55, 16, 0.952);
+    width: 100%;
 }
 
 
 .banner-hero {
     margin-top: 5px;
-    width: 80%;
+    width: 100%;
     height: 300px;
     background-image: url(./assets/Banner\ elegante\ natal.png);
     background-repeat: no-repeat;
@@ -117,8 +118,6 @@ nav {
     border: none;
     border-radius: 15px;
     margin: 30px 0 0 30px;
-   ;
-
 }
 
 .banner-btn:hover {
@@ -139,7 +138,6 @@ nav {
 
 .quick-links-border {
     height: 120px;
-    ;
     width: 120px;
     border: 3px solid #FFF;
     border-radius: 100%;
@@ -161,18 +159,24 @@ h2 {
     display: flex;
     gap: 30px;
     margin-bottom: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 .Christmas-Product {
     display: flex;
     gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 .products img {
     width: 300px;
     height: 260px;
     border-radius: 10px;
-    border: 0.5rem solid rgb(252, 9, 9);
+    border: none;
 }
 
 .products {
@@ -200,8 +204,7 @@ h4 {
 .products-btn {
     height: 30px;
     width: 120px;
-    margin-bottom: 8px;
-    margin-left: 140px;
+    margin: 8px auto 8px auto;
     border-radius: 12px;
     background-color: rgb(19, 162, 19);
     color: #ffffff;
@@ -213,15 +216,15 @@ h4 {
 
 .differential-session {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .differential img {
-    color: #ffffff;
-    display: flex;
     height: 60px;
-    margin: 30px 0 3px 45px;
+    margin: 30px auto 3px auto;
     background-color: #FFF;
     border-radius: 15px;
 }
@@ -237,7 +240,7 @@ h4 {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #fdf9f9;
@@ -270,12 +273,10 @@ justify-content: center;
 
 .developer {
     background-color: #f0e9e9;
-    width: 100vw;
+    width: 100%;
     height: 4rem;
     display: flex;
     justify-content: center;
-
-  
 }
 
 @media screen and (max-width: 770px) {
@@ -292,8 +293,8 @@ justify-content: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        gap: 1px;
+        width: 100%;
+        gap: 0.5rem;
     }
 
     logo {
@@ -330,13 +331,13 @@ justify-content: center;
     }
 
     .hero {
-        width: 100vw;
+        width: 100%;
         height: 100%;
     }
 
     .banner-hero {
         margin-top: 5px;
-        width: 100vw;
+        width: 100%;
         height: 400px;
         background-image: url(./assets/Banner\ elegante\ natal.png);
         background-repeat: no-repeat;
@@ -374,7 +375,7 @@ justify-content: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
 
     }
 
@@ -383,6 +384,7 @@ justify-content: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
 
     .Christmas-Product {
@@ -390,12 +392,14 @@ justify-content: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
     }
 
     h2 {
         font-size: 14px;
         color: #ffffff;
         margin: 5px;
+        width: 100%;
     }
 
 
@@ -430,18 +434,17 @@ justify-content: center;
         font-size: 12px;
     }
     .products-btn {
-    height: 20px;
-    width: 100px;
-    margin-bottom: 8px;
-    margin-left: 140px;
-    border-radius: 8px;
-    background-color: rgb(19, 162, 19);
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 300;
-    border: none;
-    cursor: pointer;
-}
+        height: 20px;
+        width: 100px;
+        margin: 8px auto 8px auto;
+        border-radius: 8px;
+        background-color: rgb(19, 162, 19);
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 300;
+        border: none;
+        cursor: pointer;
+    }
 .differential {
     display: flex;
     flex-direction: column;
@@ -451,8 +454,6 @@ justify-content: center;
 }
 
 .differential img {
-    color: #ffffff;
-    display: flex;
     height: 40px;
     background-color: #FFF;
     border-radius: 15px;
@@ -470,6 +471,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .contacts {
@@ -478,6 +480,7 @@ footer {
     justify-content: center;
     margin-top: 25px;
     background-color: #ffffff;
+    width: 100%;
 
 }
 
@@ -493,6 +496,7 @@ footer {
     gap: 30px;
     align-items: center;
     justify-content: center;
+    width: 100%;
     background-color: 0;
 }
 
